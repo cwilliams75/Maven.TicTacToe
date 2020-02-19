@@ -7,7 +7,7 @@ import org.junit.Test;
 /**
  * @author leon on 6/20/18.
  */
-public class PlayerTies1Test {
+public class     PlayerTies1Test {
 
     private Board board;
 
