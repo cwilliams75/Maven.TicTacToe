@@ -48,16 +48,6 @@ public class Board {
     }
 
 
-
-
-
-
-
-
-
-
-
-
     public Boolean isInFavorOfO() {
         if (board[0][0] == 'O' && (board[0][1] == 'O') && (board[0][2] == 'O'))
         {
@@ -96,15 +86,27 @@ public class Board {
     }
 
     public Boolean isTie() {
-
-
-        return null;
+        /*boolean isTie = true;
+        for(int i = 0; i <=2; i++){
+        for(int j = 0; j <=2; j++){
+            if(board[i][j] == ' ') isTie = false;
+        }
+            return true;
+    }*/
+         if(!isInFavorOfX() && !isInFavorOfO()){
+           return true;
+       } else return false;
     }
 
     public String getWinner() {
+        String winner = "";
+        if (isInFavorOfO()){
+            winner = "O";
+        }else if(isInFavorOfX()){
+            winner = "X";
+        }
 
-
-        return null;
+        return winner;
     }
 
 }
